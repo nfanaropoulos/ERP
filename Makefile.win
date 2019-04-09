@@ -1,0 +1,49 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o source/managermenu.o source/employeemenu.o source/fullscreen.o source/gotoxy.o source/login.o source/mainMenu.o source/reg.o
+LINKOBJ  = main.o source/managermenu.o source/employeemenu.o source/fullscreen.o source/gotoxy.o source/login.o source/mainMenu.o source/reg.o
+LIBS     = -L"D:/Dev-Cpp/MinGW64/lib" -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+source/managermenu.o: source/managermenu.c
+	$(CC) -c source/managermenu.c -o source/managermenu.o $(CFLAGS)
+
+source/employeemenu.o: source/employeemenu.c
+	$(CC) -c source/employeemenu.c -o source/employeemenu.o $(CFLAGS)
+
+source/fullscreen.o: source/fullscreen.c
+	$(CC) -c source/fullscreen.c -o source/fullscreen.o $(CFLAGS)
+
+source/gotoxy.o: source/gotoxy.c
+	$(CC) -c source/gotoxy.c -o source/gotoxy.o $(CFLAGS)
+
+source/login.o: source/login.c
+	$(CC) -c source/login.c -o source/login.o $(CFLAGS)
+
+source/mainMenu.o: source/mainMenu.c
+	$(CC) -c source/mainMenu.c -o source/mainMenu.o $(CFLAGS)
+
+source/reg.o: source/reg.c
+	$(CC) -c source/reg.c -o source/reg.o $(CFLAGS)

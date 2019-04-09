@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="default" />
+	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="252" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
+[Editors]
+Order=0,1,2,5,10,15,3,6
+Focused=3
+[Editor_0]
+CursorCol=6
+CursorRow=62
+TopLine=37
+LeftChar=1
+[Editor_1]
+CursorCol=16
+CursorRow=6
+TopLine=1
+LeftChar=1
+[Editor_2]
+CursorCol=34
+CursorRow=3
+TopLine=1
+LeftChar=1
+[Editor_3]
+CursorCol=13
+CursorRow=5
+TopLine=1
+LeftChar=1
+[Editor_4]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_5]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_6]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_7]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_8]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_9]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_10]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_11]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_12]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_13]
+CursorCol=1
+CursorRow=1
+TopLine=1
+LeftChar=1
+[Editor_14]
+CursorCol=20
+CursorRow=4
+TopLine=1
+LeftChar=1
+[Editor_15]
+CursorCol=22
+CursorRow=1
+TopLine=1
+LeftChar=1
