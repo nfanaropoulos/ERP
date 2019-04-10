@@ -3,3 +3,4 @@ ID     Date               Description
 1     3/4/2019         Accepted Project.
 2     6/4/2019	       Finished initial layout, graphics, basic functions, registration.
 3     9/4/2019	       Finished Login function. Account verification is now working and proper function redirection too.
+4    10/4/2019	       Created Administration Menu with header information bar. Changed Registration for administrator only.	

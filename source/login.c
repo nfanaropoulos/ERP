@@ -35,9 +35,15 @@ if((art = fopen(loginart,"r")) == NULL)
         return 1;                                                                    
 }                                                                              
 print_title(art);                                                                   
-    
+gotoxy(105,15);
+SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_BLUE);
+printf("~~Login Menu~~");
+gotoxy(105,18);
+SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_BLUE);
 printf("USERNAME:->");                                                     
-scanf("%s", &username);                                                             
+scanf("%s", &username); 
+gotoxy(105,19);        
+SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_BLUE);                                                    
 printf("PASSWORD:->"); 
 scanf("%s", &userpass); 
                                                                                                 
@@ -55,7 +61,7 @@ while (fgets(line, 1024, acc))
            if(strcmp(userpass,chk_password)==0)                                  
             { 
             	if(chk_rights[0] == 'y')
-					managerMenu();
+					managerMenu(username);
 				else
 					employeeMenu();                                               
             }                                                                   

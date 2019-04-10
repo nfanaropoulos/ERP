@@ -10,6 +10,7 @@ Date - 2nd Semester 2019
 # include <string.h>
 # include <stdlib.h>
 # include <windows.h>
+# include <time.h>
 # include "source/fullscreen.c"
 # include "source/gotoxy.c"
 # include "source/mainMenu.c"

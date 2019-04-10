@@ -1,24 +1,41 @@
 #include "../headers/reg.h"
 #include "../headers/structs.h"
 
-void reg(void){
+void reg(char username[]){
 char *borderart = "art/border1.dat"; 
 FILE *art = NULL;
 FILE *acc; 
 a.id = 0;
 char c;                                                                     //registries
 long int recsize = sizeof(a);
+time_t t = time(NULL);
+struct tm tm = *localtime(&t);
 
 
 acc=fopen("data/employees.csv","rb+");
 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_BLUE);
+system("CLS");
 if((art = fopen(borderart,"r")) == NULL)                                 
 	{                                                                      
         fprintf(stderr,"error opening %s\n",borderart);                          
         return;                                                                  
     }                                                                           
 print_title(art);
-
+	gotoxy(62,2);
+	printf("Welcome Back: ");
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_BLUE);
+	printf("%s", username);
+	gotoxy(62,3);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_BLUE);
+	printf("Date: ");
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_BLUE);
+	printf("%d-%d-%d ", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
+	gotoxy(62,4);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_BLUE);
+	printf("Notes: ");
+	gotoxy(200, 2);
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_BLUE);
+	printf("Low Quantity: ");
 gotoxy(105,11);
 printf("Registration Page");
 gotoxy(43,14);
@@ -115,7 +132,7 @@ gotoxy(77,33);
 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN);
 printf("Registration Successful. Please Press any key to go back to main menu.");
 getch();
-mainMenu();
+managerMenu(username);
 fclose(borderart);
 
 }

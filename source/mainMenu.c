@@ -23,8 +23,6 @@ SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FORE
     print_title(art);
 	gotoxy(60,18);
 	printf("Main Menu");
-	gotoxy(55,25);
-	printf("1. Register");
 	gotoxy(55,26);
 	printf("2. Login:");
 	gotoxy(55,28);

@@ -1,6 +1,6 @@
 #ifndef _MANAGERMENU_H_
 #define _MANAGERMENU_H_
  
-void managerMenu();
+void managerMenu(username);
  
 #endif
