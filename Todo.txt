@@ -3,6 +3,7 @@
 
 1) Διαχείρηση Αποθήκης
 2) Διαχείρηση Πελατών
+3) Fix edit product size entries
 
 Features to add
 ------------------------------
