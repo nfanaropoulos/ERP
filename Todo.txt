@@ -1,23 +1,20 @@
 ﻿Starting Todo List
 ------------------------------
 
-1) Διαχείρηση Αποθήκης
-2) Διαχείρηση Πελατών
-3) Fix edit product size entries
+IMPORTANT: check the while bug for shortcuts                           Done
+IMPORTANT: check the string errors on invoices loop                 Done
 
+1) Stats for products     Will check	
+2) S
 Features to add
 ------------------------------
-Διαζείρηση Προμηθευτών
-Χρεωστές
-Πιστωτές
-Αποδήξεις Λιανικής
-Αποδήξεις Χονδρικής
-Παρακολούθηση Υπαλλήλων
-Παρακολούθηση Πελατών
-Notes
-Low Quantity
-logistics
-Ισοζύγια
-Επιστροφές
+Διαζείρηση Προμηθευτών     Done 
+Αποδήξεις Λιανικής         Done
+Αποδήξεις Χονδρικής        Done
+Παρακολούθηση Υπαλλήλων    Soon
+Παρακολούθηση Πελατών      Soon
+Notes                      Done
+Low Quantity               Done
+Επιστροφές                 Done
 
 

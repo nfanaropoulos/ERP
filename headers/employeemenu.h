@@ -1,6 +1,6 @@
 #ifndef _EMPLOYEEMENU_H_
 #define _EMPLOYEEMENU_H_
  
-void login(void);
+void employeeMenu(char username[], char rights[]);
  
 #endif

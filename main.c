@@ -1,5 +1,5 @@
 /*
-Program - Quiz Game
+Program - ERP Software
 Author - Nikos Fanaropoulos
 Institute - IIEK AKMI THESSALONIKI
 Language - C Language
@@ -18,8 +18,19 @@ Date - 2nd Semester 2019
 # include "source/login.c"
 # include "source/managermenu.c"
 # include "source/employeemenu.c"
+# include "source/warehousemenu.c"
+# include "source/addproduct.c"
+# include "source/notes.c"
+# include "source/registries.c"
+# include "source/supplier.c"
+# include "source/clients.c"
+# include "source/statsmenu.c"
+# include "source/invoices.c"
+# include "source/emplstats.c"
+# include "source/loading.c"
 # define MAX_LEN 128
 
+//gotoxy(3,35) - gotoxy(3,62);
 // SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN);     								  (Green)
 // SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_BLUE);	   				 				  (Blue)
 // SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED);	    			  				  (Red)
@@ -29,35 +40,14 @@ Date - 2nd Semester 2019
 // SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_RED);          		  (YELLOW)
 // SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_RED); (WHITE)
 
-void print_title(FILE *art){                                                                                                                                                              
-    char read_string[MAX_LEN];                                                                    
-    while(fgets(read_string,sizeof(read_string),art) != NULL)                                                                                                                                
-        printf("%s",read_string);  
+void print_title(FILE *art){         										//Function to print Ascii Art found on Internet.                                                                                                                                                     
+    char read_string[MAX_LEN];                                              //Definition of the string to print.                      
+    while(fgets(read_string,sizeof(read_string),art) != NULL)               //While loop to read line by line the file containing the art, until it reach the end of file.                                                                                                                 
+        printf("%s",read_string);  										    //Print the line string to the monitor.
 }
-/*
 
-void addEmployee(){														//Add Employee Menu
-
-	printf("Employee Registration Page");
-	printf("\nID: ");
-	printf("\nFirst Name: ");
-	printf("\nLast Name: ");
-	printf("\nGender: ");
-	printf("\nDate of Joining: ");
-	printf("\nDepartment: ");
-	printf("\nAddress: ");
-	printf("\nCity: ");
-	printf("\nTel 1: ");
-	printf("\nTel 2: ");
-	printf("\nEmail: ");
-	printf("\nSSN: ");
-	printf("\nBirthday: ");
-
-}
-*/
 int main(int argc, char *argv[]) {
-SetConsoleOutputCP(CP_UTF8); 
-fullscreen();
-mainMenu();
+SetConsoleOutputCP(CP_UTF8); 												
+fullscreen();																//Initialize the program in fullscreen.		
+loading();																	//Call the loading Function which is the first function the user interact with.
 }
-

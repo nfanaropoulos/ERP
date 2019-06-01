@@ -10,16 +10,10 @@ struct accounts {
    int dd;
    int mm;
    int yyyy;
-   char address1[20];
-   char address2[20];
-   char address3[10];
+   char address[55];
    char city[15];
-   int tel1c;
-   int tel1p1;
-   int tel1p2;
-   int tel2c;
-   int tel2p1;
-   int tel2p2;
+   unsigned long tel1;
+   unsigned long tel2;
    char email[35];
    long int ssn;
    int ddjoin;
@@ -27,7 +21,7 @@ struct accounts {
    int yyyyjoin;
    char department[20];
    char administrator;
-   char username[10];
+   char user[10];
    char password[10];
 };
 
